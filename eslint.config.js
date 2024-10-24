@@ -20,7 +20,8 @@ export default [
     },
     rules: {
       'react/react-in-jsx-scope': 'off',
-      'prettier/prettier': 'error', // Usa Prettier como una regla ESLint
+      'prettier/prettier': 'error',
+      'no-mixed-spaces-and-tabs': 'off',
     },
   },
   configPrettier, // Deshabilita las reglas conflictivas de ESLint
