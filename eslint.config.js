@@ -11,6 +11,13 @@ export default [
   {
     languageOptions: { globals: globals.browser },
   },
+  {
+    settings: {
+      react: {
+        version: 'detect', // Detecta automáticamente la versión de React
+      },
+    },
+  },
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
@@ -22,6 +29,7 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'prettier/prettier': 'error',
       'no-mixed-spaces-and-tabs': 'off',
+      'no-unused-vars': 'warn',
     },
   },
   configPrettier, // Deshabilita las reglas conflictivas de ESLint
